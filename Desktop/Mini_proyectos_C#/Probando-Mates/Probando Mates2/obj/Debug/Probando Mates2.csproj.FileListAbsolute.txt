@@ -1,0 +1,10 @@
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\bin\Debug\Probando Mates2.exe.config
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\bin\Debug\Probando Mates2.exe
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\bin\Debug\Probando Mates2.pdb
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando Mates2.csproj.AssemblyReference.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando_Mates2.Form1.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando_Mates2.Properties.Resources.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando Mates2.csproj.GenerateResource.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando Mates2.csproj.CoreCompileInputs.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando Mates2.exe
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates2\obj\Debug\Probando Mates2.pdb

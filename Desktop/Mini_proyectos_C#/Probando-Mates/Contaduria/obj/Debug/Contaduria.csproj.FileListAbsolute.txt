@@ -1,0 +1,12 @@
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\bin\Debug\Contaduria.exe.config
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\bin\Debug\Contaduria.exe
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\bin\Debug\Contaduria.pdb
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.csproj.AssemblyReference.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.Form1.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.Presentacion.frmDepartamentos.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.Presentacion.frmEmpleados.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.Properties.Resources.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.csproj.GenerateResource.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.csproj.CoreCompileInputs.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.exe
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Contaduria\obj\Debug\Contaduria.pdb

@@ -1,0 +1,25 @@
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\Probando Mates.exe
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\Probando Mates.dll.config
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\Probando Mates.deps.json
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\Probando Mates.runtimeconfig.json
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\Probando Mates.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\Probando Mates.pdb
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.csproj.AssemblyReference.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando_Mates.Form1.resources
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.csproj.GenerateResource.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.AssemblyInfoInputs.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.AssemblyInfo.cs
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.csproj.CoreCompileInputs.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.csproj.CopyComplete
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\refint\Probando Mates.dll
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.pdb
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\Probando Mates.genruntimeconfig.cache
+C:\Users\sandra\Desktop\istea\programacion\Probando Mates\Probando Mates\Probando Mates\obj\Debug\net6.0-windows\ref\Probando Mates.dll
