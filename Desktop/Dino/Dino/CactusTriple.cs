@@ -9,17 +9,16 @@ namespace Dino
 {
     internal class CactusTriple : Atacantes
     {
-        public CactusTriple(PictureBox pcbCactusSimple, Form form) : base(pcbCactusSimple)
+        public CactusTriple(PictureBox pcbCactusSimple, Form form) : base(pcbCactusSimple, form)
         {
             _Sprite = pcbCactusSimple;
-            this.form = form;
+            _Form= form;
         }
-        public Form form;
 
         public override void AutoCrearse()
         {
-        
-            _Sprite.Location = new System.Drawing.Point(form.Right - 10, 200);
+            _Sprite.BringToFront();
+            _Sprite.Location = new System.Drawing.Point(_Form.Right - 10, 200);
             _Sprite.Name = "pcbCactusTriple";
             _Sprite.Size = new System.Drawing.Size(40, 40);
             _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -28,7 +27,7 @@ namespace Dino
             _Sprite.TabStop = false;
 
 
-            form.Controls.Add(_Sprite);
+            _Form.Controls.Add(_Sprite);
             // Controls.Add(pictureBox);
         }
 

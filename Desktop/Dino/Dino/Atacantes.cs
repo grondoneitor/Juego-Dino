@@ -9,9 +9,10 @@ namespace Dino
 {
     internal class Atacantes : Extras
     {
-        public Atacantes(PictureBox pcbAtacantes) : base(pcbAtacantes)
+        public Atacantes(PictureBox pcbAtacantes, Form form) : base(pcbAtacantes, form)
         {
             _Sprite = pcbAtacantes;
+            _Form = form;
         }
         public async Task Moverse()
         {
@@ -30,15 +31,6 @@ namespace Dino
                 // Puedes mostrar un mensaje de error o realizar alguna acción de manejo específica
             }
         }
-
-        public bool Volver()
-        {   
-            
-            bool vuelve = (_Sprite.Left + _Sprite.Width) <= _Sprite.Parent.Left;
-            return vuelve;
-        }
-
-
         public  bool Llegar() 
         {
             bool llego = false;

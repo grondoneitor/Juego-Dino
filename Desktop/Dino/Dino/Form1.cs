@@ -15,19 +15,20 @@ namespace Dino
         EL_Dino dino;
         CactusSimple cactus;
         CactusTriple cactusTriple;
+        Suelo suelo;
         public Form1()
         {
             InitializeComponent();
             dino = new EL_Dino(pcbDino);
             cactus = new CactusSimple(new PictureBox(),this);
             cactusTriple = new CactusTriple(new PictureBox(),this);
+            suelo = new Suelo(new PictureBox(), this);
         }
     
         private async void Form1_Load(object sender, EventArgs e)
         {
             dino.LlenarPCB();
             // cactus.AutoCrearse();
-
             List<Atacantes> atac = new List<Atacantes>();
             atac.Add(cactusTriple);
             atac.Add(cactus);
@@ -38,9 +39,25 @@ namespace Dino
 
             Atacantes atacantes = atac[index];
             atacantes.AutoCrearse();
+
+            List<Suelo> suelo = new List<Suelo>();
+            suelo.Add(new Suelo(new PictureBox(), this));
+            suelo.Add(new Suelo(new PictureBox(), this));
+            suelo.Add(new Suelo(new PictureBox(), this));
+            suelo[0].AutoCrearse();
+            suelo[0].Moverse();
             await atacantes.Moverse();
+   
+
             do
             {
+                if (suelo[0].Volver()) 
+                {
+                    suelo[1].AutoCrearse();
+                    suelo[1].Moverse();
+
+                }
+
                 if (atacantes.Llegar())
                 {
                     List<Atacantes> otro = new List<Atacantes>();
@@ -52,6 +69,7 @@ namespace Dino
 
                     Atacantes ata = otro[i];
                     ata.AutoCrearse();
+                   // suelo.AutoCrearse();
                     await ata.Moverse();
                 }
             }while (true);
