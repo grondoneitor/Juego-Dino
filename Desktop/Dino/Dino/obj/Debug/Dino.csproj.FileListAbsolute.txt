@@ -1,0 +1,10 @@
+C:\Users\sandra\Desktop\Dino\Dino\bin\Debug\Dino.exe.config
+C:\Users\sandra\Desktop\Dino\Dino\bin\Debug\Dino.exe
+C:\Users\sandra\Desktop\Dino\Dino\bin\Debug\Dino.pdb
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.csproj.AssemblyReference.cache
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.Form1.resources
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.Properties.Resources.resources
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.csproj.GenerateResource.cache
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.csproj.CoreCompileInputs.cache
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.exe
+C:\Users\sandra\Desktop\Dino\Dino\obj\Debug\Dino.pdb
