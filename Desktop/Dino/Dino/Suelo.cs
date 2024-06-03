@@ -16,13 +16,13 @@ namespace Dino
         }
 
         
-        public  void AutoCrearse()
+        public override  void AutoCrearse()
         {
      
                 _Sprite.SendToBack();
                 _Sprite.Location = new System.Drawing.Point(0, 236);
                 _Sprite.Name = "pcbSuelo";
-                _Sprite.Size = new System.Drawing.Size(1350, 20);
+                _Sprite.Size = new System.Drawing.Size(1400, 20);
                 _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                 _Sprite.Image = Properties.Resources.suelo;
                 _Sprite.TabIndex = 0;
@@ -33,7 +33,7 @@ namespace Dino
             
             // Controls.Add(pictureBox);
         }
-        public async Task Moverse()
+        public override async Task Moverse()
         {
             if (_Sprite != null && _Sprite.Parent != null)
             {
