@@ -16,20 +16,21 @@ namespace Dino
         }
 
         
-        public override void AutoCrearse()
+        public  void AutoCrearse()
         {
+     
+                _Sprite.SendToBack();
+                _Sprite.Location = new System.Drawing.Point(0, 236);
+                _Sprite.Name = "pcbSuelo";
+                _Sprite.Size = new System.Drawing.Size(1350, 20);
+                _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                _Sprite.Image = Properties.Resources.suelo;
+                _Sprite.TabIndex = 0;
+                _Sprite.TabStop = false;
 
-            _Sprite.SendToBack();
-            _Sprite.Location = new System.Drawing.Point(0, 236);
-            _Sprite.Name = "pcbSuelo";
-            _Sprite.Size = new System.Drawing.Size(1000, 20);
-            _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            _Sprite.Image = Properties.Resources.suelo;
-            _Sprite.TabIndex = 0;
-            _Sprite.TabStop = false;
-       
 
-            _Form.Controls.Add(_Sprite);
+                _Form.Controls.Add(_Sprite);
+            
             // Controls.Add(pictureBox);
         }
         public async Task Moverse()
@@ -46,12 +47,17 @@ namespace Dino
 
         public bool Volver()
         {
-            bool vuelve = false;
-            if(_Sprite.Right <= _Sprite.Parent.Width)
+            bool llego = false;
+            if (_Sprite != null && _Sprite.Parent != null)
             {
-                vuelve = true;
+          
+             //   if (_Sprite.Left <= _Form.Right) 
+               // {
+                    llego = true;
+                //}
+                
             }
-            return vuelve;
+            return llego;
         }
     }
 }

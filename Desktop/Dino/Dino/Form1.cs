@@ -42,21 +42,28 @@ namespace Dino
 
             List<Suelo> suelo = new List<Suelo>();
             suelo.Add(new Suelo(new PictureBox(), this));
-            suelo.Add(new Suelo(new PictureBox(), this));
-            suelo.Add(new Suelo(new PictureBox(), this));
             suelo[0].AutoCrearse();
             suelo[0].Moverse();
             await atacantes.Moverse();
-   
 
+            int num = 1;
             do
             {
-                if (suelo[0].Volver()) 
+
+                for (int j = 0; j <= 1; j++)
                 {
-                    suelo[1].AutoCrearse();
-                    suelo[1].Moverse();
+                    suelo.Add(new Suelo(new PictureBox(), this));
 
                 }
+                if (suelo[0].Volver())
+                {
+                    suelo[num].AutoCrearse();
+                    suelo[num].Moverse();
+
+                }
+    
+
+
 
                 if (atacantes.Llegar())
                 {
@@ -72,6 +79,7 @@ namespace Dino
                    // suelo.AutoCrearse();
                     await ata.Moverse();
                 }
+                num++;
             }while (true);
 
         }
