@@ -39,6 +39,11 @@ namespace Dino
             get { return _Sprite.Height; }
             set { _Sprite.Height = value; }
         }
+        //public int Right
+        //{
+        //    get { return _Sprite.Right; }
+        //    set { _Sprite.Right = value; }
+        //}
         #endregion coordenadas
     }
 
