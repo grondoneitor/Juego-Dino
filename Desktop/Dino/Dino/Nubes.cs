@@ -23,7 +23,8 @@ namespace Dino
             _Sprite.Location = new System.Drawing.Point(_Form.Right, 40);
             _Sprite.Name = "pcbNubes";
             _Sprite.Size = new System.Drawing.Size(92, 27);
-            _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            _Sprite.BorderStyle = BorderStyle.FixedSingle;
             _Sprite.Image = Properties.Resources.nubeOriginal;
             _Sprite.TabIndex = 0;
             _Sprite.TabStop = false;
@@ -71,11 +72,11 @@ namespace Dino
                         await Task.Delay(50);
                     }
 
-                    if (nubes[num].Left + nubes[num].Width   <= _Form.Left - nubes[num].Width)
+                    if (nubes[num].Left + nubes[num].Width   <= 0 )
                     {
                         nubes[num]._Sprite.Image = null;
-                        //nubes.Remove(nubes[num]);
-                        num++;
+                        nubes.Remove(nubes[num]);
+                       // num++;
                         nubeCreada = false;
                     }
 
