@@ -20,11 +20,11 @@ namespace Dino
         {
 
             _Sprite.SendToBack();
-            _Sprite.Location = new System.Drawing.Point(_Form.Right, 40);
+          //  _Sprite.Location = new System.Drawing.Point(_Form.Right, 40);
             _Sprite.Name = "pcbNubes";
             _Sprite.Size = new System.Drawing.Size(92, 27);
             _Sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            _Sprite.BorderStyle = BorderStyle.FixedSingle;
+           // _Sprite.BorderStyle = BorderStyle.FixedSingle;
             _Sprite.Image = Properties.Resources.nubeOriginal;
             _Sprite.TabIndex = 0;
             _Sprite.TabStop = false;
@@ -42,16 +42,16 @@ namespace Dino
             //{
             List<Nubes> nubes = new List<Nubes>();
             nubes.Add(new Nubes(new PictureBox(), _Form));
-            nubes[0].AutoCrearse();
             int num = 0;
+            nubes[num ]._Sprite.Location = new System.Drawing.Point(_Form.Right, 40);
+            nubes[num].AutoCrearse();
+ 
 
             bool nubeCreada = false;
             do
             {
                 for (int i = 0; i < 1; i++)
                 {
-
-
                     if (nubes.Contains(nubes[num]))
                     {
                         nubes[num].Left -= 5;
@@ -60,23 +60,33 @@ namespace Dino
                     if (nubes[num].Left <= _Form.Width / 2 && !nubeCreada)
                     {
                         nubes.Add(new Nubes(new PictureBox(), _Form));
-                        nubes[num + 1].AutoCrearse();
+                        //nubes[num + 1 ].AutoCrearse();
 
+                        if(num % 2 == 0)
+                        {
+                            nubes[num +1]._Sprite.Location = new System.Drawing.Point(_Form.Right, 80);
+                            nubes[num + 1].AutoCrearse();
+                        }
+                        else
+                        {
+                            nubes[num + 1]._Sprite.Location = new System.Drawing.Point(_Form.Right, 40);
+                            nubes[num + 1].AutoCrearse();
 
+                        }
 
                         nubeCreada = true;
                     }
                     if (nubeCreada)
                     {
-                        nubes[num + 1].Left -= 5;
+                        nubes[num +1].Left -= 5;
                         await Task.Delay(50);
                     }
 
                     if (nubes[num].Left + nubes[num].Width   <= 0 )
                     {
                         nubes[num]._Sprite.Image = null;
-                        nubes.Remove(nubes[num]);
-                       // num++;
+                        //nubes.Remove(nubes[num]);
+                        num++;
                         nubeCreada = false;
                     }
 
