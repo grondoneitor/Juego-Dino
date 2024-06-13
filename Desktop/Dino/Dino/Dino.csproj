@@ -106,5 +106,11 @@
   <ItemGroup>
     <None Include="Resources\suelo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\PasoderechoDino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\PasoIzquierdoDino.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

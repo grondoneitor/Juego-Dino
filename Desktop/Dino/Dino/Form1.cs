@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Dino
@@ -15,17 +16,26 @@ namespace Dino
         public Form1()
         {
             InitializeComponent();
-            dino = new EL_Dino(pcbDino);
-            cactus = new CactusSimple(new PictureBox(),this);
-            cactusTriple = new CactusTriple(new PictureBox(),this);
+            dino = new EL_Dino(pcbDino, this);
+            cactus = new CactusSimple(new PictureBox(), this);
+            cactusTriple = new CactusTriple(new PictureBox(), this);
             suelo = new Suelo(new PictureBox(), this);
             nubes = new Nubes(new PictureBox(), this);
         }
+        private bool Saltando = false;
 
         private async void Form1_Load(object sender, EventArgs e)
         {
+
             dino.LlenarPCB();
+
+            var caminarTask = dino.Caminar();
+
+//            dino.Caminar(Saltando);
+
+
             nubes.Moverse();
+            
             //nubes.AutoCrearse();
             // cactus.AutoCrearse();
             List<Atacantes> atac = new List<Atacantes>();
@@ -47,16 +57,12 @@ namespace Dino
             await atacantes.Moverse();
 
 
-
             int num = 1;
             do
             {
-                 
-   
+      
 
-
-
-                for (int j = 0; j <= 1; j++)
+                for ( int j = 0; j <= 1; j++)
                 {
                     suelo.Add(new Suelo(new PictureBox(), this));
 
@@ -65,12 +71,9 @@ namespace Dino
                 {
                     suelo[num].AutoCrearse();
                     suelo[num].Moverse();
+               
 
                 }
-
-            
-
-
                 if (atacantes.Llegar())
                 {
                     List<Atacantes> otro = new List<Atacantes>();
@@ -82,23 +85,30 @@ namespace Dino
 
                     Atacantes ata = otro[i];
                     ata.AutoCrearse();
-                   // suelo.AutoCrearse();
+                    // suelo.AutoCrearse();
                     await ata.Moverse();
                 }
+                dino.Caminar();
                 num++;
-            }while (true);
+            } while (true);
 
         }
-        
 
 
         private async void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             Keys tecla = e.KeyCode;
+          
             if (tecla == Keys.Space)
             {
-               await dino.Saltar();
+                Saltando = true;
+               // dino.Caminar(Saltando);
+                
+                dino.Saltar();
+
+             //   await Task.Delay(1000); 
             }
+            Saltando = false;
         }
     }
 }
